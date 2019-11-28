@@ -24,7 +24,7 @@
     <div class="container">
       <div class="navbar-translate">
         <a class="navbar-brand" href="#rbn">
-          <img src="img/logowhite.svg" width="13%"> Ruben Pas </a>
+          <img src="img/logowhite.svg" width="13%"> Ruben Pascual </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Toggle navigation</span>
           <span class="navbar-toggler-icon"></span>
@@ -249,55 +249,80 @@
       </div>
     </div>
     <!--contacto-->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 ml-auto mr-auto">
-          <div class="card card-login">
-            <form class="form" method="POST" action="js/procesar.php">
-              <div class="card-header card-header-primary text-center">
-                <h4 class="card-title">Contacto</h4>
-                <div class="social-line">
-                  <a href="#rbn" class="btn btn-just-icon btn-link">
-                    <i class="fa fa-facebook-square"></i>
-                  </a>
-                  <a href="#rbn" class="btn btn-just-icon btn-link">
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                  <a href="#rbn" class="btn btn-just-icon btn-link">
-                    <i class="fa fa-google-plus"></i>
-                  </a>
+    
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+        <div class="card card-login">
+          <form class="form" method="POST" action="js/procesar.php">
+            <div class="card-header card-header-primary text-center">
+              <h4 class="card-title">Contacto</h4>
+              <div class="social-line">
+                <a href="#rbn" class="btn btn-just-icon btn-link">
+                  <i class="fa fa-facebook-square"></i>
+                </a>
+                <a href="#rbn" class="btn btn-just-icon btn-link">
+                  <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#rbn" class="btn btn-just-icon btn-link">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </div>
+            </div>
+            <p class="description text-center">llena tus datos y envia</p>
+            <div class="card-body">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">face</i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" name="nombre" placeholder="tu nombre" required>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">mail</i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" name="correo" placeholder="tu correo electronico" required>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="material-icons">message</i>
+                  </span>
+                </div>
+                <input type="text" class="form-control" name="mensaje" placeholder="tu consulta" required>
+              </div>
+            </div>
+            <!--<button type="submit" class="btn btn-primary ml-4">enviar</button>-->
+              <!-- Button trigger modal -->
+            <div class="container ml-2">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">enviar</button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">error al enviar sms</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  envia mensaje a travez de:
+                  <a href="https://wa.me/59167549775" class="btn btn-just-icon btn-link btn-dribbble"><i class="fa fa-whatsapp"></i></a>
+                  <a href="mailto:rubpas27@gmail.com" class="btn btn-just-icon btn-link btn-pinterest"><i class="fa fa-envelope"></i></a>
                 </div>
               </div>
-              <p class="description text-center">llena tus datos y envia</p>
-              <div class="card-body">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">face</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="nombre" placeholder="tu nombre" required>
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">mail</i>
-                    </span>
-                  </div>
-                  <input type="email" class="form-control" name="correo" placeholder="tu correo electronico" required>
-                </div>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">
-                      <i class="material-icons">message</i>
-                    </span>
-                  </div>
-                  <input type="text" class="form-control" name="mensaje" placeholder="tu consulta" required>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary ml-4">enviar</button>
-            </form>
+            </div>
           </div>
+            </div>
+            <!-- hasta-->
+          </form>
         </div>
       </div>
     </div>
